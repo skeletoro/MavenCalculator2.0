@@ -46,11 +46,24 @@ public class Calculator {
 		double valuea = scanner.nextDouble();
 		System.out.println("enter second value for division");
 		double valueb = scanner.nextDouble();
+		if (valuea == 0){
+			double answer = 0;
+			System.out.println("the answer is " + answer);
+			System.out.println("                                ");
+			return answer;
+		}else if (valueb == 0){
+			double answer = 0;
+			System.out.println("cannot divide by zero");
+			System.out.println("                                ");
+			return answer;
+		}else {		
 		double answer = valuea / valueb;
-
 		System.out.println("the answer is " + answer);
 		System.out.println("                                ");
 		return answer;
+		}
+		
+	
 	}
 
 }
